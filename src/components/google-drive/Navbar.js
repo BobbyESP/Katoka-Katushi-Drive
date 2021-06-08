@@ -18,9 +18,6 @@ export default function NavbarComponent() {
           Consola Firebase (Desarrollo)
         </a>
         </Nav.Link>
-        <Nav.Link as={Link} to="/testApp">
-          FILE PREVIEWING TEST
-        </Nav.Link>
       </Nav>
     </Navbar>
   )
