@@ -8,6 +8,7 @@ import PrivateRoute from "./authentication/PrivateRoute"
 import ForgotPassword from "./authentication/ForgotPassword"
 import UpdateProfile from "./authentication/UpdateProfile"
 import Dashboard from "./google-drive/Dashboard"
+import redirectFirebase from "./google-drive/redirect"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* Drive */}
           <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute exact path="/folder/:folderId" component={Dashboard} />
+          <PrivateRoute exact path="/firebase" component={redirectFirebase} />
 
           {/* Profile */}
           <PrivateRoute path="/user" component={Profile} />
